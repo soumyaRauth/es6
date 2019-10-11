@@ -1,13 +1,15 @@
-//Printing two different functions; one with let and the other with var
-(function(){
-    if(true){
-        let count = 2;
-        console.log(`count is ${count}`)
+/**
+ * Constructor function
+ */
+
+
+function Language(){
+    this.title="Japanese";
+    this.country="Japan";
+    this.speak=function (){
+        console.log("Speak");
     }
-})();
-(function(){
-    if(true){
-        var count = 2;
-    }
-    console.log(`count is ${count}`)
-})()
+}
+
+const lang=new Language();
+lang.speak();
